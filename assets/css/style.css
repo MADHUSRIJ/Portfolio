@@ -1,1 +1,39 @@
-/* Initial style sheet */
+*{
+ overflow-x: hidden;
+ margin: 0;
+}
+
+.profile-box{
+    background-color: rgb(174, 240, 252);
+    height: 26em;
+    box-shadow: 0px 50px 50px 0px rgba(192, 192, 192, 0.39);
+    animation: come-in 5s forwards;
+}
+
+
+#profile-pic{
+    border-radius: 50%;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+@media (max-width:1000px){
+    .main-left{
+        background: rgba(35, 177, 202, 0.306);
+    }
+    .profile-box{
+        transform: translateY(0%);
+        margin: 10px 0 10px 0;
+    }
+}
+
+@media (min-width:1000px){
+    .main-left{
+        background: linear-gradient(to right,rgba(35, 177, 202, 0.650) 0%,rgba(35, 177, 202, 0.650) 50%,white 50%,white 50%);
+    }
+    .profile-box{
+        transform: translateY(20%);
+    }
+}
